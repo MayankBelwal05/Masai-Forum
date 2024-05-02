@@ -21,7 +21,7 @@ export default function SignUp() {
       email: event.target.email.value,
       password: event.target.password.value,
     };
-
+//
     try {
       const response = await fetch("http://localhost:3000/api/register", {
         method: "POST",
