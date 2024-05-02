@@ -14,6 +14,9 @@ app.use(cors());
 app.use('/api',userRoute);
 app.use('/api',postRoute)
 
+app.use('/',(req,res)=>{
+    res.send("Home")
+})
 
 
 const PORT=process.env.PORT
