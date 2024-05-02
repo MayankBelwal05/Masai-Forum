@@ -34,7 +34,7 @@ const Posts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('https://masai-forum-backend-k3vu.onrender.com/api/posts');
+        const response = await fetch('http://localhost:3000/api/posts');
         if (!response.ok) {
           throw new Error('Failed to fetch posts');
         }
